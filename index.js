@@ -5,7 +5,7 @@ let array = [];
   }
 return array;
 }
-function reduce(sourceArray, callback, starting=0){
+function reduce(sourceArray, callback, starting){
   let total = 0;
   if(startingPoint!=undefined)
     total += startingPoint;
