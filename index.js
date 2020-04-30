@@ -1,12 +1,13 @@
 function map(sourceArray, callback){
-  return callback(sourceArray);
+let array = [];
+  for(let i =0;i<sourceArray.length;i++){
+    array.push(callback(sourceArray));
+  }
+return array;
 }
 function reduce(sourceArray, callback, starting){
   let total;
-  if(starting)
-    total += starting;
-
-  total =callback(sourceArray);
+  total = callback(sourceArray,starting); 
 
   return total;
 }
