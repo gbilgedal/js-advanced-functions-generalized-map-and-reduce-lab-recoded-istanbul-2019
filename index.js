@@ -1,14 +1,12 @@
 function map(sourceArray, callback){
   return callback(sourceArray);
 }
-function reduce(sourceArray, starting){
+function reduce(sourceArray, callback, starting){
   let total;
   if(starting)
     total += starting;
-  for(let i =0;i<sourceArray.length;i++){
-    total+=sourceArray[i];
-  }
 
-
+  total =callback(sourceArray);
+  
   return total;
 }
