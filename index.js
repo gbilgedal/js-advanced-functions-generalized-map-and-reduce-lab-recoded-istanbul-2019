@@ -8,9 +8,9 @@ return array;
 function reduce(sourceArray, callback, starting){
   if(starting!=undefined){
        return sourceArray.reduce(callback)+starting;
-   }else{
-       return sourceArray.reduce(callback);
    }
+   return sourceArray.reduce(callback);
+   
 
 
 }
