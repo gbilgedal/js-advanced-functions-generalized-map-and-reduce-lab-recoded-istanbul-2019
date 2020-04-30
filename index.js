@@ -10,7 +10,7 @@ function reduce(sourceArray, callback, starting){
        return sourceArray.reduce(callback)+starting;
    }
    return sourceArray.reduce(callback);
-   
+
 
 
 }
