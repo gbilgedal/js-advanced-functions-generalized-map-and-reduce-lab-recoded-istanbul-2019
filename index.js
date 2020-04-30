@@ -7,7 +7,8 @@ return array;
 }
 function reduce(sourceArray, callback, starting){
   let total;
-  total = callback(sourceArray,starting);
-
+  for(let i =0;i<sourceArray.length;i++){
+  total += callback(sourceArray[i]);
+  }
   return total;
 }
