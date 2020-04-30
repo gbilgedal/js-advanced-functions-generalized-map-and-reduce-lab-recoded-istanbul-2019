@@ -5,8 +5,10 @@ function reduce(sourceArray, starting){
   let total;
   if(starting)
     total += starting;
-  sourceArray.forEach(e=>{
-    total+=e;
-  });
+  for(let i =0;i<sourceArray.length;i++){
+    total+=sourceArray[i];
+  }
+
+
   return total;
 }
