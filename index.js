@@ -6,11 +6,11 @@ let array = [];
 return array;
 }
 function reduce(sourceArray, callback, starting=0){
-  let total;
-  if(starting>0){
-    total += starting;
+  let total = 0;
+  if(startingPoint!=undefined)
+    total += startingPoint;
+  for(let i = 0;i<sourceArray.length;i++){
+    total += sourceArray[i];
   }
-  total += sourceArray.reduce(callback);
-
   return total;
 }
