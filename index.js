@@ -11,7 +11,7 @@ function reduce(sourceArray, callback, starting){
     total += starting;
   }
   for(let i =0;i<sourceArray.length;i++){
-  total = callback(sourceArray[i]);
+    total = callback(sourceArray[i],starting);
   }
   return total;
 }
