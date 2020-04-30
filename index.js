@@ -7,6 +7,6 @@ function reduce(sourceArray, callback, starting){
     total += starting;
 
   total =callback(sourceArray);
-  
+
   return total;
 }
