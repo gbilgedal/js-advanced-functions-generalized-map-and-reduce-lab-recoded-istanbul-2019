@@ -6,7 +6,7 @@ let array = [];
 return array;
 }
 function reduce(sourceArray, callback, starting){
-  let total;
+  let total=0;
   if(starting>0){
     total += starting;
   }
